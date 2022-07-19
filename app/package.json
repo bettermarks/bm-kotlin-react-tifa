@@ -23,6 +23,7 @@
     "webpack-dev-server": "^4.9.2"
   },
   "dependencies": {
+    "equation-validator": "file:../equation-validator/build/js/packages/equation-validator",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   }
