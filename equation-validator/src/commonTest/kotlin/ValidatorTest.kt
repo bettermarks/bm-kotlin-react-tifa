@@ -22,4 +22,14 @@ internal class ValidatorTest {
     fun testZero() {
         assertEquals(validate("""0+4=4"""), "OK")
     }
+
+    @Test
+    fun testWhitespace() {
+        assertEquals(validate("""     2   +    2 =   4"""), "OK")
+    }
+
+    @Test
+    fun testStartWithZero() {
+        assertEquals(validate("""05+04=9"""), "OK")
+    }
 }
